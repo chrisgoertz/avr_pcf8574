@@ -12,6 +12,12 @@ Please refer to LICENSE file for licensing information.
 */
 
 #include <stdint.h>
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
 #define PCF8574_ADDRBASE (0x20)
 
 /**
@@ -27,5 +33,9 @@ uint8_t pcf8574_getPort(uint8_t adr);
 * @param data: uint8_t The new Pinstate
 */
 void pcf8574_setPort(uint8_t adr, uint8_t data);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

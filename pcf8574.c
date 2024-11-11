@@ -10,7 +10,7 @@ Please refer to LICENSE file for licensing information.
 
 
 #include <stdint.h>
-#include "../i2c_avr/i2c_master.h"
+#include <i2c_master.h>
 #include "pcf8574.h"
 
 
